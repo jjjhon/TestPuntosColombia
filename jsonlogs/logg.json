@@ -1,0 +1,109 @@
+[
+  {
+    "description": "    Feature Registration page of the function will work based on the user's credentials.",
+    "elements": [
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 5,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 6,
+            "name": "A user opens a Todotest website",
+            "result": {
+              "duration": 8463000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": "registration-page;user-registration",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "User registration",
+        "steps": [
+          {
+            "keyword": "When ",
+            "line": 8,
+            "name": "A user provides credentials for registration",
+            "result": {
+              "duration": 2823000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "email",
+                  "codPostal",
+                  "phone",
+                  "questionExamination",
+                  "carnet",
+                  "permission",
+                  "permissionOption",
+                  "password",
+                  "passwordRep",
+                  "receiveChanges"
+                ]
+              },
+              {
+                "cells": [
+                  "jhon.oe12347@gmail.com",
+                  "110110",
+                  "3008274903",
+                  "En menos de 3 meses.",
+                  "Para desplazamientos laborales.",
+                  "B (Turismo)",
+                  "Voy por libre.",
+                  "123456789",
+                  "123456789",
+                  "Sí"
+                ]
+              }
+            ]
+          },
+          {
+            "keyword": "And ",
+            "line": 11,
+            "name": "A user clicks on the registration button",
+            "result": {
+              "duration": 197000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 12,
+            "name": "The code is generated and sent to the mailing address",
+            "result": {
+              "duration": 7221000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "registration-page",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Registration page",
+    "uri": "cypress\\e2e\\features\\registration.feature"
+  }
+]
